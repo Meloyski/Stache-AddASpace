@@ -483,6 +483,12 @@ form p {
 .SpaceTitle, .SpaceEdit, .SpaceDesc {
   margin-bottom: 25px;
 }
+.SpaceTitle div h2 {
+  font-size: 28px;
+}
+.SpaceTitle div p {
+  font-size: 16px
+}
 .UserSpaceInfo h2 {
   font-size: 32px;
   margin: 0 0 5px;
@@ -555,7 +561,6 @@ form p {
   display: flex;
   align-items: center;
   align-content: center;
-  width: 24%;
 }
 .spaceUserImage img {
   width: 75px;
@@ -597,7 +602,7 @@ h5  {
   }
 }
 
-@media(max-width: 1080px) {
+@media(max-width: 1140px) {
   .SpaceEdit, .UserSpaceImage, .UserSpaceInfo {
     flex-basis: 100% !important;
     flex-grow: 3 !important;
@@ -605,9 +610,6 @@ h5  {
   }
   .UserSpaceImage {
     height: 400px
-  }
-  .SpaceType {
-    flex-wrap: wrap
   }
 }
 
@@ -661,6 +663,23 @@ h5  {
   }
   .price p {
     font-size: 15px
+  }
+  .SpaceType {
+    flex-wrap: wrap
+  }
+  .SpaceItem p {
+    display: none
+  }
+  .SpaceItem {
+    width: 18%;
+    margin-top: 25px
+  }
+  .pageTypeWrap, .pageProfileWrap {
+    height: auto !important;
+  }
+  .pageType, .pageProfile {
+    transform: none !important;
+    padding: 120px 0 !important;
   }
 }
 
@@ -730,6 +749,12 @@ h5  {
     width: 33%;
     margin-top: 25px
   }
+  .SpaceTitle {
+    flex-wrap: wrap;
+  }
+  .spaceUser {
+    margin-top: 20px
+  }
   .pageAddressWrap, .pageNameWrap, .pageDescWrap, .pageFeatWrap, .pageSizeWrap, .pageImageWrap {
     height: 100vh !important;
     padding: 0 20px
@@ -749,9 +774,6 @@ h5  {
   .pageTypeWrap {
     padding: 45% 0
   }
-  .pageProfileWrap {
-    padding: 25px 0;
-  }
   .App .form {
     padding: 15px !important
   }
@@ -765,9 +787,12 @@ h5  {
   top: 43%;
   transform: translateY(-50%);
 }
-
+.pageProfileWrap {
+  height: 102vh;
+}
 .pageProfile {
-  top: 50% !important;
+  transform: none !important;
+  top: 0 !important
 }
 
 
