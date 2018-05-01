@@ -296,7 +296,7 @@ form p {
   transform: scale(1.01);
 }
 .SpaceItem img {
-  width: 75%;
+  width: 100%;
 }
 .SpaceItem h2 {
   font-family: Quicksand,sans-serif;
@@ -746,10 +746,12 @@ h5  {
     top: 0;
     transform: none !important
   }
-  .pageTypeWrap, .pageProfileWrap {
-    padding: 90px 0
+  .pageTypeWrap {
+    padding: 45% 0
   }
-
+  .pageProfileWrap {
+    padding: 25px 0;
+  }
   .App .form {
     padding: 15px !important
   }
