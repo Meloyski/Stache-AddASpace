@@ -66,7 +66,7 @@ const CaptureContent = ({address, spaceType, detailsName, detailsDesc, detailsFe
           </div>
           <div className="SpaceItem" onClick={() => history.push('/details-name')}>
             <div className="SpaceImageWrap">
-              <img src={TypeBedroom} />
+              <img src={TypeOther} />
             </div>
             <h2>Other</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
